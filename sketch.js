@@ -6,9 +6,9 @@ const Constraint = Matter.Constraint;
 var engine, world;
 var ground;
 
-var vox1 = [];
-var vox2 = [];
-var vox3 = [];
+var vox = [];
+//var vox2 = [];
+//var vox3 = [];
 
 var ball, string;
   
@@ -25,19 +25,19 @@ function setup(){
 
 for(var i = 0; i<5; i++ ){
 
-  vox1.push(new Box(700,100));
+  vox.push(new Box(700,100));
  
 }
 
 for(var i=0; i<7; i++){
 
-  vox2.push(new Box(800,100));
+  vox.push(new Box(800,100));
 
 }
 
 for(var i=0; i<8; i++){
 
-  vox3.push(new Box(900,100));
+  vox.push(new Box(900,100));
 
 }
 
@@ -56,13 +56,13 @@ function draw() {
 
   ground.display();
 
- for(var i=0; i<5; i++){
+ for(var j=0; j<vox.length; j++){
 
-    vox1[i].display();
+    vox[j].display();
 
   }
 
-  for (var i=0; i<7; i++){
+ /* for (var i=0; i<7; i++){
 
     vox2[i].display();
 
@@ -72,7 +72,7 @@ function draw() {
 
     vox3[i].display();
 
-  }
+  }*/
 
   ball.display();
   string.display();

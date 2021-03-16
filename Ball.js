@@ -5,7 +5,7 @@ class Ball{
         var options={
    
             restitution:0.2,
-            frictionAir:0.01,
+            frictionAir:0.001,
             density:1
 
         }

@@ -5,7 +5,7 @@ class Box{
         var options={
 
             restitution:0.4,
-            friction:1,
+            friction:0,
             density:0.04,
             isStatic:false
 
